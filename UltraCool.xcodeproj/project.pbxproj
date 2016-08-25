@@ -12,8 +12,6 @@
 		C1FD8BF11D6E7C4600236334 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1FD8BEF1D6E7C4600236334 /* Main.storyboard */; };
 		C1FD8BF31D6E7C4600236334 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1FD8BF21D6E7C4600236334 /* Assets.xcassets */; };
 		C1FD8BF61D6E7C4600236334 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1FD8BF41D6E7C4600236334 /* LaunchScreen.storyboard */; };
-		C1FD8C011D6E7C4600236334 /* UltraCoolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FD8C001D6E7C4600236334 /* UltraCoolTests.swift */; };
-		C1FD8C0C1D6E7C4600236334 /* UltraCoolUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FD8C0B1D6E7C4600236334 /* UltraCoolUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,11 +40,7 @@
 		C1FD8BF51D6E7C4600236334 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C1FD8BF71D6E7C4600236334 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C1FD8BFC1D6E7C4600236334 /* UltraCoolTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UltraCoolTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C1FD8C001D6E7C4600236334 /* UltraCoolTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UltraCoolTests.swift; sourceTree = "<group>"; };
-		C1FD8C021D6E7C4600236334 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C1FD8C071D6E7C4600236334 /* UltraCoolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UltraCoolUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C1FD8C0B1D6E7C4600236334 /* UltraCoolUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UltraCoolUITests.swift; sourceTree = "<group>"; };
-		C1FD8C0D1D6E7C4600236334 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +72,6 @@
 			isa = PBXGroup;
 			children = (
 				C1FD8BEA1D6E7C4600236334 /* UltraCool */,
-				C1FD8BFF1D6E7C4600236334 /* UltraCoolTests */,
-				C1FD8C0A1D6E7C4600236334 /* UltraCoolUITests */,
 				C1FD8BE91D6E7C4600236334 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -105,24 +97,6 @@
 				C1FD8BF71D6E7C4600236334 /* Info.plist */,
 			);
 			path = UltraCool;
-			sourceTree = "<group>";
-		};
-		C1FD8BFF1D6E7C4600236334 /* UltraCoolTests */ = {
-			isa = PBXGroup;
-			children = (
-				C1FD8C001D6E7C4600236334 /* UltraCoolTests.swift */,
-				C1FD8C021D6E7C4600236334 /* Info.plist */,
-			);
-			path = UltraCoolTests;
-			sourceTree = "<group>";
-		};
-		C1FD8C0A1D6E7C4600236334 /* UltraCoolUITests */ = {
-			isa = PBXGroup;
-			children = (
-				C1FD8C0B1D6E7C4600236334 /* UltraCoolUITests.swift */,
-				C1FD8C0D1D6E7C4600236334 /* Info.plist */,
-			);
-			path = UltraCoolUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,7 +239,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C1FD8C011D6E7C4600236334 /* UltraCoolTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,7 +246,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C1FD8C0C1D6E7C4600236334 /* UltraCoolUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,6 +373,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.thecodegrid.UltraCool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -412,6 +385,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.thecodegrid.UltraCool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -482,6 +456,7 @@
 				C1FD8C121D6E7C4600236334 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C1FD8C131D6E7C4600236334 /* Build configuration list for PBXNativeTarget "UltraCoolTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +465,7 @@
 				C1FD8C151D6E7C4600236334 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C1FD8C161D6E7C4600236334 /* Build configuration list for PBXNativeTarget "UltraCoolUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +474,7 @@
 				C1FD8C181D6E7C4600236334 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
